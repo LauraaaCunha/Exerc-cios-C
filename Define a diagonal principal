@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    int matriz[3][3] = {{3,4,1}, {0,2,7},{10,15,20}};
+
+        //diagonal principal
+     for( j=0; j<3; j++)
+    {
+        for( i=0; i<3; i++)
+        {
+
+        printf("diagonal principal %d ", matriz[i][i]);
+            }
+        }
+}
