@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int soma_recursiva(int n){
+
+    if(n==1){
+    return 1;
+    }
+            return n + soma_recursiva(n-1);//soma_recursiva eh como se chamasse outra funçao - eh como se fizese o processo contrario
+
+}
+
+int main(){
+
+int numero;
+
+printf("informe numero: ");
+scanf("%d", &numero);
+
+
+printf("soma recursiva = %d ", soma_recursiva(numero));
+
+return 0;
+
+
+}
