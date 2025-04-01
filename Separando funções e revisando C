@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+typedef struct{
+char nome[65];
+float nota;
+} Aluno;
+
+
+void imprimeDados(Aluno aluno){
+printf("\n nome %s ", aluno.nome);
+printf("\n nota %f ", aluno.nota);
+
+
+}
+
+void imprime_Final(Aluno aluno[]){
+
+  for(int i=0; i<5; i++){
+imprimeDados(aluno[i]);
+}
+
+}
+
+
+int main(){
+
+Aluno aluno1[5] = {{"Roger", 7.0}, {"A", 8.0}, {"b", 8.0}, {"c", 8.0}, {"d", 8.0}};
+
+imprime_Final(aluno1);
+
+return 0;
+
+
+}
