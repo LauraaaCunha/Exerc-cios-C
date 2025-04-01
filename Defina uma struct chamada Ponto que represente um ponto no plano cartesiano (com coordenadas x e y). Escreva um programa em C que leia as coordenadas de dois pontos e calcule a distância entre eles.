@@ -1,0 +1,37 @@
+#include <stdio.h>   // Biblioteca para entrada e saída (printf, scanf)
+#include <math.h>    // Biblioteca para funções matemáticas (como sqrt e pow)
+
+// Definição da estrutura Ponto que representa um ponto no plano cartesiano
+typedef struct{
+    float x;  // Coordenada x do ponto
+    float y;  // Coordenada y do ponto
+} Ponto;
+
+int main()
+{
+    // Declaração das variáveis pA e pB, do tipo Ponto
+    Ponto pA, pB;
+
+    // Solicita ao usuário as coordenadas do ponto A
+    printf("Informe as coordenadas do ponto A: \n");
+    // Lê as coordenadas x e y do ponto A e armazena em pA.x e pA.y
+    scanf("%f %f", &pA.x, &pA.y);
+
+    // Solicita ao usuário as coordenadas do ponto B
+    printf("Informe as coordenadas do ponto B: \n");
+    // Lê as coordenadas x e y do ponto B e armazena em pB.x e pB.y
+    scanf("%f %f", &pB.x, &pB.y);
+
+    // Calcula a distância entre os pontos A e B usando a fórmula da distância euclidiana
+    // Fórmula: d = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+    float distanca = sqrt(pow(pB.x - pA.x, 2) + pow(pB.y - pA.y, 2));
+
+    // Exibe a distância calculada com duas casas decimais
+    printf("A distancia entre os dois pontos eh %.2f", distanca);
+
+    // Imprime uma nova linha para melhorar a formatação da saída
+    printf("\n");
+
+    // Retorna 0 indicando que o programa terminou com sucesso
+    return 0;
+}
